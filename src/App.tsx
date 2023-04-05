@@ -10,6 +10,8 @@ function App() {
         <div>About me</div>
         <div>Minor change</div>
         <div>Minor change 2</div>
+        <div>Minor change 3</div>
+        <div>Minor change 4</div>
       </main>
     </div>
   );
