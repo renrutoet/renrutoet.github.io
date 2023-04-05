@@ -8,6 +8,7 @@ function App() {
       <h1>Homepage</h1>
       <main className="card">
         <div>About me</div>
+        <div>Testing CICD</div>
       </main>
     </div>
   );
