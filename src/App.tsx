@@ -1,18 +1,18 @@
 import { useState } from "react";
+import { HeroSection } from "./components/Hero";
+import { AboutSection } from "./components/About";
+import { WorkSection } from "./components/Work";
+import { ContactSection } from "./components/Contact";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="h-screen bg-black	">
-      <div className="flex h-full justify-center items-center	text-center	">
-        <div className="text-white	">
-          <h1 className="text-3xl">Welcome to the homepage of Teo Turner!</h1>
-          <h4 className="text-xl">
-            This site is currently under construction, come back soon!
-          </h4>
-        </div>
-      </div>
+    <div className="h-screen ">
+      <HeroSection />
+      <AboutSection />
+      <WorkSection />
+      <ContactSection />
     </div>
   );
 }
