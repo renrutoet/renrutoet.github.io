@@ -1,19 +1,19 @@
 import { useState } from "react";
-import { HeroSection } from "./components/Hero";
-import { AboutSection } from "./components/About";
-import { WorkSection } from "./components/Work";
-import { ContactSection } from "./components/Contact";
+import { HeroSection } from "./sections/Hero";
+import { AboutSection } from "./sections/About";
+import { WorkSection } from "./sections/Work";
+import { ContactSection } from "./sections/Contact";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="h-screen ">
+    <main className="h-screen ">
       <HeroSection />
       <AboutSection />
       <WorkSection />
       <ContactSection />
-    </div>
+    </main>
   );
 }
 
