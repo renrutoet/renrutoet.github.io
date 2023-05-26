@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <main className="h-screen ">
+    <main className="h-full">
       <HeroSection />
       <AboutSection />
       <WorkSection />
