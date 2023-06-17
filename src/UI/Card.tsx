@@ -12,13 +12,12 @@ export const PortfolioCard = ({
   caption,
 }: CardProps): JSX.Element => {
   return (
-    <div className="flex flex-col basis-1/2 p-6 border-rose-600 border-2">
+    <div className="flex flex-col basis-1/3 p-6 border-cyan-600 border-2">
       <div className="py-6 text-center">{title || "Portfolio Card"}</div>
-      <div className="relative group">
+      <div className="relative group overflow-hidden">
         <img src={img || "https://picsum.photos/1800"} />
-        <div className="py-6 bg-slate-500">{caption || "Caption"}</div>
-        <div className="absolute bg-black w-full h-full top-0 invisible group-hover:visible z-10">
-          Testing
+        <div className="absolute py-6 text-white bg-black w-full h-full -top-20 translate-y-full group-hover:translate-y-0 group-hover:top-0 transition-all truncate hover:text-clip hover:whitespace-normal p-3">
+          {caption || "Caption"}
         </div>
       </div>
     </div>

@@ -8,10 +8,12 @@ export const WorkSection = () => {
           <div className="bg-gray-500 w-2/3 h-full flex flex-col justify-center items-center">
             <h4 className="p-12">Here are some examples of my work</h4>
             <div className="flex flex-wrap">
-              <PortfolioCard title="Work item 1" />
-              <PortfolioCard />
-              <PortfolioCard />
-              <PortfolioCard />
+              <PortfolioCard
+                title="Work item 1"
+                caption={
+                  "Here is the first project I worked on that is worth seeing"
+                }
+              />
               <PortfolioCard />
               <PortfolioCard />
             </div>
